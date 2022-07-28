@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+.underline{
+    content: "";
+    display: flex;
+    width: 100px;
+    border-radius: 10px;
+    height: 4px;
+    background-color: #fac819;
+    margin: 20px auto 25px;
+    
+}
+h1, h2{
+   font-size: 40px;
+}
+h1,h2,h3,h4{
+  color:rgb(15,25,35);
+}
+/* start header */
+
+ header{
+   width: 100%;
+    background-color:rgb(15,25,35);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    position: fixed;
+    z-index: 10;
+ }
+ header figure img{
+    width: 227px;
+ }
+ header ul{
+    display: flex;
+    
+ }
+ header ul li{
+    margin-left: 20px;
+ }
+ header ul li a{
+    color: #fff;
+ }
+ header ul li a:hover{
+    color: #fac819;
+ }
+ header .social-media ul li a{
+    background-color: rgb(50,60,70);
+    border-radius:50%;
+    padding:10px;
+ }
+ /* end header */
+
+ /* start about */
+ #about{
+    height: 100vh;
+    background-image: url(../image/bg-picture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ #about .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.7;
+    position: relative;
+}
+#about .introduction{
+    padding: 90px 0 120px;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content:baseline;
+    text-align: center;
+}
+#about .introduction .apply-form{
+    width: 360px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+#about .introduction .apply-form h3{
+   margin-bottom: 30px;
+   font-size: 30px;
+   justify-content: center;
+
+}
+
+#about .introduction .apply-form input{
+    width: 100%;
+    height: 43px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 8px 0;
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+#about .introduction .apply-form button{
+   background-color: #fac819;
+   color:#fff;
+   border: 2px solid #fac819;
+   border-radius: 50px;
+   padding: 15px 30px;
+   text-align: center;
+   text-transform: uppercase;
+   cursor: pointer;
+   box-shadow: 5px 10px 18px #888888;
+}
+#about .introduction .apply-form button:hover{
+   background-color: #cba311;
+   border-color: #cba311;
+}
+#about .introduction .about-content{
+    width: 35%;
+    margin-top: 50px;
+}
+
+#about .introduction .about-content p{
+   font-size: 20px; 
+   text-align: center;
+   color: #555;
+   line-height: 1.8;
+}
+ /* end about */
+ /*  start advantages */
+ #advantages{
+   width: 100%;
+   text-align: center;
+   padding: 60px 0;
+ }
+ 
+ #advantages .benefits{
+   width: 1000px;
+   margin:25px auto;
+   display: flex;
+   justify-content:center;
+ }
+ #advantages .benefits .card{
+   width: 25%;
+   padding: 25px;
+   text-align: center;
+ }
+ #advantages .benefits .card .icon{
+   width: 100px;
+   height: 100px;
+   background-image: linear-gradient(to bottom, rgba(250, 200, 25, .3), transparent);
+   border-radius: 15px;
+   transform: rotate(45deg);
+   margin:auto;
+   justify-content: center;
+
+ }
+ #advantages .benefits .card .icon i{
+   height: 50px;
+   width: 50px;
+   font-size: 50px;
+   line-height: 50px;
+   transform: rotate(-45deg);
+   color: #fac819;
+   padding: 15px 75px 0 0;
+ }
+ #advantages .benefits .card h4{
+   font-size: 18px;
+   margin:20px 0 10px;
+ }
+ #advantages .benefits .card p{
+   color: #555;
+   line-height: 1.5;
+ }
+ /*  end advantages */
+ /* start how-to-work */
+ #how-to-work{
+   background-color:rgb(50,60,70);
+   display:flex;
+   justify-content: space-around;
+   margin: 0 auto;
+   padding: 60px 30px;
+ }
+ #how-to-work .work-content{
+   text-align: center;
+   width: 300px;
+ }
+ #how-to-work .work-content p{
+   font-size: 20px;
+   line-height: 1.8;
+ }
+ #how-to-work .work-content p,#how-to-work .work-content h2{
+  color:#fff;
+ }
+ #how-to-work .work-video figure img{
+   height: 305px;
+   width: 546px;
+ }
+ #how-to-work .work-video{
+   border: 2px solid white;
+   box-shadow: 5px 10px 18px #000;
+   position: relative;
+ }
+ #how-to-work .work-video a{
+   position: absolute;
+   top:35%;
+   left:40%;
+ }
+ #how-to-work .work-video a i{
+   font-size:45px;
+   color:#fff;
+   background-color: #f4d463;
+   border: 2px solid #fff;
+   box-shadow: 5px 6px 6px #888888;
+   border-radius: 50%;
+   padding: 18px;
+ }
+
+ /* end how-to-work */
+ /* start partners */
+ #partners{
+   padding:60px  100px 60px;
+   display: flex;
+   justify-content: space-around;
+ }
+ #partners .partners-content {
+   width: 30%;
+   text-align: center;
+ }
+ #partners .partners-content p{
+   font-size:20px;
+   line-height: 1.5;
+   color:#555;
+ }
+ #partners .partners-logo {
+   width: 55%;
+   margin-top: 20px;
+ }
+ .partners-logo img {
+   width: 200px;
+   filter: grayscale(100%);
+ }
+ .partners-logo .logo-top {
+   display: flex;
+   justify-content: space-around;
+ }
+ .partners-logo .logo-bottom {
+   display: flex;
+   justify-content: space-evenly;
+ }
+ /* end partners */
+ /* start footer */
+ footer{
+   text-align: center;
+   margin: 0 auto;
+   padding: 60px 100px 100px;
+   background-color: rgb(15,25,35);
+   background-image: url(../image/footer-map.png);
+   background-repeat: no-repeat;
+   background-position: center ; 
+ }
+ footer ul li a{
+   line-height: 1.5;
+ }
+ footer ul li a, footer h5{
+   color: #fff;
+   font-size: 20px;
+ }
+ 
+ footer .social-media ul{
+   display: flex;
+   justify-content: center;
+ }
+ footer .social-media ul li a{
+   background-color: rgb(50,60,70);
+   border-radius:50%;
+   padding:10px;
+   margin: 5px;
+}
+/* footer nav ul{
+   background-image: url(../image/footer-map.png);
+   background-repeat: no-repeat;
+} */
+footer .underline{
+   background-color: #707070;
+}
+ footer ul li a:hover, footer h5:hover{
+   color:#fac819;
+ }
+ /* end footer */
